@@ -1,0 +1,50 @@
+<br>
+<h1 style="color:blue" class="text-center"> THÔNG TIN CHI TIẾT SẢN PHẨM</h1>
+<hr>
+<div class="container">
+  <div class="row" *ngFor=" let p of shopping">
+    <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7 balll ">
+      <img src="{{p.imageUrl}}" alt="">
+    </div>
+    <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
+
+      <table class="table">
+        <tbody>
+          <tr>
+            <th scope="row">
+              <h2 class="casd">THÔNG TIN SẢN PHẨM</h2>
+            </th>
+          </tr>
+          <tr>
+            <th scope="row">Tên sản phẩm</th>
+            <td>{{p.Name}} </td>
+          </tr>
+          <tr>
+            <th scope="row">MÃ SẢN PHẨM:</th>
+            <td>{{p.encoder}}</td>
+          </tr>
+          <tr>
+            <th scope="row">GIÁ CỦA SẢN PHẨM:</th>
+            <td>{{p.Price}}</td>
+          </tr>
+          
+         
+
+         
+          <tr class="text-center">
+            <button type="button" class="btn btn-success" onclick="sweet()" id="sweet">MUA HÀNG   </button>
+            
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+<hr>
+<script>
+ function sweet(){
+  document.getElementById("sweet").swal("Here's the title!", "...and here's the text!");
+  
+ };
+ document.getElementsByClassName('sweet()')
+</script>

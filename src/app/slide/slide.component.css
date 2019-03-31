@@ -1,0 +1,10 @@
+.thumbnaill img {
+    width: 120px;
+    height: 172px;
+}
+.col-xs-6.col-sm-6.col-md-6.col-lg-6 {
+    text-align: left;
+}
+h3#news {
+    text-align: center;
+}
